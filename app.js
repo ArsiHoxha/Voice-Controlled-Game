@@ -95,8 +95,8 @@ recognition.addEventListener('result', event => {
   if(event.results[0].isFinal) {
     console.log(transcript);
 
-    // check if the input starts with 'hello'
-    if(transcript.indexOf('up') == 0|| transcript.indexOf('Alicia') == 0  ) {
+   
+    if(transcript.indexOf('up') == 0) {
       lojtari.vy = -6
       pengesat.push(new Pengese(canvas.width - lojtari.width + 10,canvas.height-lojtari.height,-4,0))
     }
